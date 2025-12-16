@@ -1,3 +1,8 @@
+:root {
+    --dashboard-color: #0BA6DF;
+    --text-color-white: white;
+}
+
 @font-face {
     font-family: 'Roboto';
     src: url('src/fonts/Roboto_Condensed-Regular.ttf');
@@ -24,12 +29,15 @@ body {
     grid-column: 1 / 2;
     grid-row: 1 / 6;
     display: grid;
-    grid-template-columns: 1.5fr 3fr; 
-    grid-template-rows: 5fr 3fr 1fr;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.2fr 1fr 2fr;
+    background-color: var(--dashboard-color);
+    color: var(--text-color-white);
+    padding-left: 2rem;
 }
 
-.dashboard > *{
-    outline: 0.5px solid gray;
+.logo {
+    
 }
 
 .header {
@@ -67,4 +75,18 @@ body {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     background-color: aqua;
+}
+
+.icon {
+    height: 35px;
+    filter: invert(100%);
+}
+
+
+
+.item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 0.75rem;
 }
