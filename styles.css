@@ -77,6 +77,33 @@ input {
 
 }
 
+.header-bottom {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    
+}
+
+.header-bottom-item-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+}
+
+.header-bottom {
+    align-items: center;
+    justify-items: center;
+}
+
+.header-bottom-btn {
+    padding: 10px 30px;
+    background-color: var(--dashboard-color);
+    color: white;
+    border-radius: 12px;
+    border: none;
+}
+
 .main-content {
     background-color: lightgreen;
     grid-column: 2 / 3;
@@ -95,11 +122,7 @@ input {
 }
 
 
-.header-bottom {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    background-color: aqua;
-}
+
 
 .icon {
     height: 35px;
