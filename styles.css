@@ -36,9 +36,6 @@ body {
     padding-left: 2rem;
 }
 
-.logo {
-    
-}
 
 .header {
     grid-column: 2 / 4;
@@ -46,6 +43,38 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+}
+
+.header-top {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    align-items: center;
+    
+}
+
+.header-top-item {
+    display: grid;
+    place-items: center;
+}
+
+.icon-header {
+    height: 25px;
+    
+}
+
+.logo-header-top {
+    height: 40px;
+}
+
+input {
+    width: 100%;
+    border: none;
+    height: 1.5rem;
+    background-color: rgb(244, 242, 242);
+    border-radius: 10px;
+
 }
 
 .main-content {
@@ -65,11 +94,6 @@ body {
     
 }
 
-.header-top {
-    background-color: lightgoldenrodyellow;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
 
 .header-bottom {
     grid-column: 1 / 2;
@@ -90,3 +114,5 @@ body {
     align-items: center;
     column-gap: 0.75rem;
 }
+
+
