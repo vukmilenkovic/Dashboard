@@ -2,6 +2,7 @@
     --dashboard-color: #0BA6DF;
     --text-color-white: white;
     --background-color: rgb(244, 242, 242);
+    --content-background: #f2f5f9;
 }
 
 @font-face {
@@ -106,7 +107,7 @@ input {
 }
 
 .main-content {
-    background-color: var(--background-color);
+    background-color: var(--content-background);
     grid-column: 2 / 3;
     grid-row: 2 / 6;
     display: grid;
@@ -125,7 +126,7 @@ input {
     
 }
 .main-announcements {
-    background-color: var(--background-color);
+    background-color: var(--content-background);
     grid-column: 3 / 4;
     grid-row: 2 / 4;
     display: grid;
@@ -138,11 +139,23 @@ input {
 
 .main-trending {
     grid-row: 4 / 6;
-    background-color: var(--background-color);
+    background-color: var(--content-background);
     grid-column: 3 / 4;
     display: grid;
     grid-template-rows: 30px 1fr;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 10px;
 
+}
+
+.trending-card {
+    grid-row: 2 / 3;
+    border: 0.5px solid lightgray;
+    border-radius: 4px;
+    background-color: var(--text-color-white);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 .announcement-text {
@@ -155,11 +168,15 @@ input {
     grid-row: 2 / 3;
     border: 0.5px solid lightgray;
     border-radius: 4px;
+    background-color: var(--text-color-white);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 .card {
     border: 0.5px solid lightgray;
     border-radius: 4px;
+    background-color: var(--text-color-white);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 
