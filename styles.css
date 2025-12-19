@@ -219,6 +219,14 @@ input {
     padding-right: 20px;
 }
 
+
+.icons {
+    justify-self: right
+}
+.card-icon {
+    height: 20px;
+}
+
 .bar {
     grid-column: 1 / 2;
     background-color: orange;
